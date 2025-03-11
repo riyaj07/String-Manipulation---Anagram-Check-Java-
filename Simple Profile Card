@@ -1,0 +1,108 @@
+<!--HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="profile.jpg" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+      <h2>John Doe</h2>
+      <p>Web Developer</p>
+      <p class="bio">Passionate about creating responsive and user-friendly websites. Loves coding and designing.</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</body> 
+</html>
+
+
+
+<!-- CSS-->
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-image img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #0073e6;
+}
+
+/* Profile Info */
+.profile-info {
+  padding: 20px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.profile-info .bio {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Social Icons */
+.social-icons {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #0073e6;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #005bb5;
+}
